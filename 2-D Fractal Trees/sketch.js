@@ -1,15 +1,16 @@
 // https://www.youtube.com/watch?v=kKT0v3qhIQY
 
 var tree;
-var max_dist = 10;
-var min_dist = 10;
+var max_dist = 75;
+var min_dist = 5;
 
 function setup() {
-	createCanvas(400, 400);
+	createCanvas(600, 600);
 	tree = new Tree();
 }
 
 function draw() {
 	background(51);
 	tree.show();
+	tree.grow();
 }
